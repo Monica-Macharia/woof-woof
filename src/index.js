@@ -30,17 +30,18 @@ function display(data){
        })}
    
 }
-
+ //displaying details of individual dog when clicked
 function details(newItem){
     
     
     let info = document.querySelector("#dog-info")
-   
+    
+    
      info.innerHTML= 
     `<img src="${newItem.image}"/>
      <h2>${newItem.name}</h2>
-     <button id="good">Good Dog</button>`
-     
+     <button id="good">good</button>`
+    
 }
 
 fetch("http://localhost:3000/pups")
