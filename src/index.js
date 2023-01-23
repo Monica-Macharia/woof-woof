@@ -11,7 +11,13 @@ function display(data){
     
     list.innerHTML = mapper
     
-
+       let span = document.getElementsByTagName("span")
+       
+       for (let child of span){
+       console.log(child)
+       child.addEventListener("click", function(){
+          data.map(dog => )
+       })}
    
 }
 
